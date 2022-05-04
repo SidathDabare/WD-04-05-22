@@ -15,10 +15,7 @@
   </head>
   <body>
     <div class="overlay"></div>
-    <nav class="navbar navbar-expand-lg col-11 m-auto border-bottom">
-      <a class="navbar-brand" href="#"
-        ><img src="./assets/logo.svg" alt="logo-image"
-      /></a>
+    <nav class="navbar navbar-expand-lg border-bottom">
       <button
         class="navbar-toggler"
         type="button"
@@ -31,17 +28,28 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div
+        class="collapse navbar-collapse col-lg-11 m-auto"
+        id="navbarSupportedContent"
+      >
         <ul class="navbar-nav mr-auto col-6">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Discover<span class="sr-only">(current)</span></a
+            <a class="navbar-brand" href="#"
+              ><img src="./assets/logo.svg" alt="logo-image"
+            /></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#Deal of the Week"
+              >Deal of the Week<span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Tour Package</a>
+            <a class="nav-link" href="#WelcomeSummer">Welcome Summer</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item">
+            <a class="nav-link" href="#DealOfTheDday">Deal of the day</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -58,10 +66,10 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
-          </li>
-          <li class="nav-item">
+          </li> -->
+          <!-- <li class="nav-item">
             <a class="nav-link disabled">Disabled</a>
-          </li>
+          </li> -->
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input
@@ -70,17 +78,30 @@
             placeholder="Search"
             aria-label="Search"
           />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
             Sign in
+          </button> -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#exampleModal"
+            data-whatever="contact us"
+          >
+            Contact us
           </button>
         </form>
       </div>
     </nav>
+
     <div class="jumbotron col-11 m-auto bg-transparent">
-      <h1 class="display-4">Hello, world!</h1>
+      <h1 class="display-4">Travel Agency</h1>
       <p class="lead">
-        This is a simple hero unit, a simple jumbotron-style component for
-        calling extra attention to featured content or information.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est blanditiis
+        repellendus optio at ex minima voluptate, alias iure nesciunt numquam
+        nostrum nobis accusamus id, quidem, accusantium asperiores natus enim.
+        Natus iusto beatae commodi eligendi ducimus. Tempora odit inventore sed
+        earum quod eius placeat culpa rem esse? Rem deserunt corporis iste.
       </p>
       <hr class="my-4" />
       <p>
@@ -92,7 +113,7 @@
     <div
       class="jumbotron container1 col-11 m-auto justify-content-between bg-transparent"
     >
-      <h3 class="text-white pl-1">Deal of the Week</h3>
+      <h3 class="text-white px-1" id="Deal of the Week">Deal of the Week</h3>
       <div class="row col-12 m-auto d-flex flex-fill">
         <div class="col-12 col-sm-6 col-md-3 px-1 mb-2 mb-md-0">
           <img
@@ -154,10 +175,10 @@
       </div>
     </div>
     <div class="jumbotron container2 col-11 m-auto bg-transparent">
-      <h3 class="text-white pl-1">Welcome Summer</h3>
+      <h3 class="text-white px-1" id="Welcome Summer">Welcome Summer</h3>
       <div class="row col-12 col-lg-12 m-auto justify-content-between">
         <div
-          class="card summer-deal col-12 col-sm-4 col-md-2 px-1 mb-2 mb-md-0"
+          class="card summer-deal col-6 col-lg-2 col-md-4 col-sm-4 px-1 mb-2 mb-md-0"
         >
           <img
             src="https://images.unsplash.com/photo-1519112232436-9923c6ba3d26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
@@ -174,11 +195,11 @@
           </div>
         </div>
         <div
-          class="card summer-deal col-12 col-sm-4 col-md-2 px-1 mb-2 mb-md-0"
+          class="card summer-deal col-6 col-lg-2 col-md-4 col-sm-4 px-1 mb-2 mb-md-0"
         >
           <img
             src="https://images.unsplash.com/photo-1519112232436-9923c6ba3d26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            class="card-img-top summer-image"
+            class="summer-image"
             alt="..."
           />
           <div class="card-body">
@@ -190,11 +211,11 @@
           </div>
         </div>
         <div
-          class="card summer-deal col-12 col-sm-4 col-md-2 px-1 mb-2 mb-md-0"
+          class="card summer-deal col-6 col-lg-2 col-md-4 col-sm-4 px-1 mb-2 mb-md-0"
         >
           <img
             src="https://images.unsplash.com/photo-1519112232436-9923c6ba3d26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            class="card-img-top summer-image"
+            class="summer-image"
             alt="..."
           />
           <div class="card-body">
@@ -206,11 +227,11 @@
           </div>
         </div>
         <div
-          class="card summer-deal col-12 col-sm-4 col-md-2 px-1 mb-2 mb-md-0"
+          class="card summer-deal col-6 col-lg-2 col-md-4 col-sm-4 px-1 mb-2 mb-md-0"
         >
           <img
             src="https://images.unsplash.com/photo-1519112232436-9923c6ba3d26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            class="card-img-top summer-image"
+            class="summer-image"
             alt="..."
           />
           <div class="card-body">
@@ -222,11 +243,11 @@
           </div>
         </div>
         <div
-          class="card summer-deal col-12 col-sm-4 col-md-2 px-1 mb-2 mb-md-0"
+          class="card summer-deal col-6 col-lg-2 col-md-4 col-sm-4 px-1 mb-2 mb-md-0"
         >
           <img
             src="https://images.unsplash.com/photo-1519112232436-9923c6ba3d26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            class="card-img-top summer-image"
+            class="summer-image"
             alt="..."
           />
           <div class="card-body">
@@ -238,7 +259,7 @@
           </div>
         </div>
         <div
-          class="card summer-deal col-12 col-sm-4 col-md-2 px-1 mb-2 mb-md-0"
+          class="card summer-deal col-6 col-lg-2 col-md-4 col-sm-4 px-1 mb-2 mb-md-0"
         >
           <img
             src="https://images.unsplash.com/photo-1519112232436-9923c6ba3d26?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
@@ -255,20 +276,115 @@
         </div>
       </div>
     </div>
-    <div class="footer">
-      <p class="col-11 m-auto text-white">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-        saepe ab animi reiciendis! Reprehenderit explicabo deleniti veniam, a
-        rerum veritatis aut animi nesciunt temporibus nemo fugiat! Eos debitis
-        corporis totam nisi non similique velit ullam dolorum nesciunt, delectus
-        consequuntur reprehenderit provident nostrum soluta. Eveniet, ratione
-        autem vel libero doloremque, atque harum dicta, vitae quae in a. Iste
-        adipisci ipsam molestias sunt iure, libero nemo repellendus,
-        perspiciatis sequi magni iusto enim, quaerat exercitationem molestiae
-        laudantium id quidem nulla cupiditate quam voluptas quae optio. Quisquam
-        similique commodi labore, sed ipsa impedit nam laborum aspernatur. Eos
-        minus necessitatibus atque eaque sint maiores enim!
-      </p>
+    <div
+      class="jumbotron container3 col-11 m-auto bg-transparent d-lg-flex d-md-none d-sm-none"
+    >
+      <h3 class="text-white px-1" id="DealOfTheDday">Deal of the day</h3>
+      <div class="row col-lg-12 d-flex flex-wrap m-auto">
+        <div class="col-lg-8 col-sm-12 deal-of-day px-0">
+          <img
+            src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            alt=""
+          />
+        </div>
+        <div class="col-lg-4 col-sm-12 px-5 pt-3 deal-content">
+          <h2>Lorem, ipsum.</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iure
+            explicabo eveniet sunt aliquam exercitationem, placeat eum dolor
+            repellendus sapiente dolorem cum, ducimus ratione impedit
+            consequatur tenetur quas? Qui, atque. Ullam, deleniti ipsam eaque
+            facilis quo quibusdam a modi repellendus, natus, praesentium in
+            officiis soluta recusandae optio facere odio repudiandae.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iure
+            explicabo eveniet sunt aliquam exercitationem, placeat eum dolor
+            repellendus sapiente dolorem cum, ducimus ratione impedit
+            consequatur tenetur quas? Qui, atque. Ullam, deleniti ipsam eaque
+            facilis quo quibusdam a modi repellendus, natus, praesentium in
+            officiis soluta recusandae optio facere odio repudiandae.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer row py-5 m-auto">
+      <div class="col-12">
+        <p class="col-11 m-auto text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          saepe ab animi reiciendis! Reprehenderit explicabo deleniti veniam, a
+          rerum veritatis aut animi nesciunt temporibus nemo fugiat! Eos debitis
+          corporis totam nisi non similique velit ullam dolorum nesciunt,
+          delectus consequuntur reprehenderit provident nostrum soluta. Eveniet,
+          ratione autem vel libero doloremque, atque harum dicta, vitae quae in
+          a. Iste adipisci ipsam molestias sunt iure, libero nemo repellendus,
+          perspiciatis sequi magni iusto enim, quaerat exercitationem molestiae
+          laudantium id quidem nulla cupiditate quam voluptas quae optio.
+          Quisquam similique commodi labore, sed ipsa impedit nam laborum
+          aspernatur. Eos minus necessitatibus atque eaque sint maiores enim!
+        </p>
+      </div>
+      <div class="col-12 text-center">
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#exampleModal"
+          data-whatever="contact us"
+        >
+          Contact us
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label"
+                  >Recipient:</label
+                >
+                <input type="text" class="form-control" id="recipient-name" />
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label"
+                  >Message:</label
+                >
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script
@@ -281,5 +397,16 @@
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $("#exampleModal").on("show.bs.modal", function (event) {
+        var button = $(event.relatedTarget); // Button that triggered the modal
+        var recipient = button.data("whatever"); // Extract info from data-* attributes
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        var modal = $(this);
+        modal.find(".modal-title").text("New message to " + recipient);
+        modal.find(".modal-body input").val(recipient);
+      });
+    </script>
   </body>
 </html>
