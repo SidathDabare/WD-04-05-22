@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Outfit", sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 110vh;
+  width: 100%;
+  background: linear-gradient(
+    157deg,
+    rgba(3, 41, 89, 1) 0%,
+    rgba(0, 80, 147, 0.18280815744266454) 100%
+  );
+  z-index: -1;
+}
+.navbar a {
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.jumbotron {
+  color: white;
+  flex-wrap: wrap;
+}
+/* .container {
+  padding: 0;
+  width: 100%;
+} */
+div.row {
+  padding: 0;
+}
+div.card {
+  padding: 0;
+  color: white;
+  background-color: transparent;
+  border: none;
+  width: 25%;
+}
+div.card img {
+  height: 11rem;
+  width: 18rem;
+  min-width: 18rem;
+  background-size: cover;
+}
+div.card-body {
+  padding: 10px;
+}
+.summer-deal > .summer-image {
+  width: 11rem;
+  min-width: 11rem;
+  object-fit: contain;
+}
+
+.card.summer-deal > div.card-body {
+  width: 11rem;
+}
