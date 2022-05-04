@@ -10,7 +10,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  height: 110vh;
+  height: 200vh;
   width: 100%;
   background: linear-gradient(
     157deg,
@@ -30,6 +30,10 @@ body {
   color: white;
   flex-wrap: wrap;
 }
+
+.container1 {
+  padding: 0;
+}
 /* .container {
   padding: 0;
   width: 100%;
@@ -43,22 +47,31 @@ div.card {
   background-color: transparent;
   border: none;
   width: 25%;
+  background-size: contain;
 }
 div.card img {
-  height: 11rem;
-  width: 18rem;
-  min-width: 18rem;
-  background-size: cover;
+  width: 100%;
+  background-size: contain;
 }
 div.card-body {
   padding: 10px;
 }
+div.summer-deal {
+  width: 16%;
+  object-fit: contain;
+}
 .summer-deal > .summer-image {
-  width: 11rem;
-  min-width: 11rem;
+  width: 100%;
   object-fit: contain;
 }
 
 .card.summer-deal > div.card-body {
-  width: 11rem;
+  width: 100%;
+}
+.footer {
+  position: relative;
+  margin-top: 2px;
+  height: 10rem;
+  width: 100%;
+  background-color: black;
 }
